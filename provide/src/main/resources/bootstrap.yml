@@ -1,0 +1,27 @@
+server:
+  port: 8881
+
+spring:
+  application:
+    name: provide
+
+  cloud:
+    nacos:
+      # nacos配置中心
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        namespace: test
+        file-extension: yaml
+        group: LU_GROUP
+      # nacos服务注册与发现
+      discovery:
+        server-addr: 113.57.95.26:8848
+        namespace: test
+        group: LU_GROUP
+
+
+
+
+
+
+
