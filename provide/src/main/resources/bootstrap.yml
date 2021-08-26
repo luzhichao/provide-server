@@ -19,8 +19,26 @@ spring:
         namespace: test
         group: LU_GROUP
 
+  # spring boot admin 健康检查
+  boot:
+    admin:
+      client:
+        url: http://localhost:8888
+        username: admin
+        password: admin
 
 
+# 开启所有端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      base-path: /
+  # 显示所有细节
+  endpoint:
+    health:
+      show-details: always
 
 
 

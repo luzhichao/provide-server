@@ -23,9 +23,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.gecko.reformer</groupId>
-            <artifactId>module-common-feign</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-client</artifactId>
         </dependency>
     </dependencies>
 
