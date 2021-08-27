@@ -13,16 +13,15 @@ import org.springframework.web.bind.annotation.*;
  * @date 2021/08/23
  **/
 @RestController
-@RequestMapping("/provide")
 public class ProvideController implements ProvideApi {
 
     @Override
     public ProvideDTO getProvide(@RequestBody String name) {
-        try {
-            Thread.sleep(4000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep(4000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
         ProvideDTO dto = new ProvideDTO();
         dto.setName(name);
         return dto;
@@ -37,7 +36,7 @@ public class ProvideController implements ProvideApi {
      * @date 2021/08/23
      * @version 1.0.0
      **/
-    @PostMapping("/getName")
+    @PostMapping("/provide/getName")
     public Result<String> getName() {
         return Result.success("getName方法");
     }

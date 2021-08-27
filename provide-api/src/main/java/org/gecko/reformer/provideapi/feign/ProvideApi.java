@@ -3,8 +3,6 @@ package org.gecko.reformer.provideapi.feign;
 import org.gecko.reformer.provideapi.dto.ProvideDTO;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * provide服务api接口
@@ -13,8 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
  * @version 1.0.0
  * @date 2021/08/23
  **/
-@RestController
-@RequestMapping("/provide")
 public interface ProvideApi {
 
     /**
@@ -26,7 +22,7 @@ public interface ProvideApi {
      * @date 2021/08/23
      * @version 1.0.0
      **/
-    @PostMapping("/getProvide")
+    @PostMapping("/provide/getProvide")
     ProvideDTO getProvide(@RequestBody String name);
 
 }
